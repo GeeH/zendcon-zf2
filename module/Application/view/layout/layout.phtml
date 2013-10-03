@@ -1,0 +1,37 @@
+<?php /* @var Zend_View $this */ ?>
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Commentizr - Zendcon 2013</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <?php echo $this->headLink()
+            ->appendStylesheet("/css/bootstrap.min.css")
+            ->appendStylesheet("/css/main.css");
+    ?>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="#">Commentizr - ZendCon 2013</a>
+        </div>
+    </div>
+</div>
+<div class="container">
+
+    <div class="row span12">
+        <?php echo $this->content; ?>
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>Awesome comments by Commentizr</p>
+    </footer>
+</div>
+<!-- /container -->
+</body>
+</html>
